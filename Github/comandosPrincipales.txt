@@ -1,0 +1,16 @@
+Iniciar Git en la carpeta que contiene los archivos:
+git init
+
+#### Agregar archivos ####
+git add *
+
+#### Eliminar archivo ####
+git rm <fileName> or <Path/to/fileName>
+
+###### Commit y Subir ######
+Commit de la accion:
+git commit -m "comentario descriptivo"
+
+Subir cambios:
+git push origin <branchName>
+
