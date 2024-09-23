@@ -1,4 +1,7 @@
-Iniciar Git en la carpeta que contiene los archivos:
+##### Después de configurar la clave SSH y agregarla a GitHub.com, puede probar la conexión
+ssh -T git@github.com
+
+##### Iniciar Git en la carpeta que contiene los archivos:
 git init
 
 ##### Conecta tu repositorio local con GitHub mediante SSH ####
