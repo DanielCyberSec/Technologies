@@ -24,7 +24,8 @@ git remote set-url origin git@github.com:tu-usuario/tu-repositorio.git
 git branch
 
 #### Verifica el estado del repositorio
-git status
+1. git fetch
+2. git status
 
 #### Aplicar los cambios de la rama remota sobre tu trabajo local, y...
 git pull --rebase
