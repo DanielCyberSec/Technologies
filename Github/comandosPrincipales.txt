@@ -14,6 +14,15 @@ Deberías ver algo como esto:
 origin  git@github.com:tu-usuario/tu-repositorio.git (fetch)
 origin  git@github.com:tu-usuario/tu-repositorio.git (push)
 
+Pero si observas algo como esto:
+origin	https://github.com/DanielCyberSec/PythonScripts.git (fetch)
+origin	https://github.com/DanielCyberSec/PythonScripts.git (push)
+no podras autenticarte mediante ssh, por lo que tendras que Cambiar el URL remoto de HTTPS a SSH:
+git remote set-url origin git@github.com:tu-usuario/tu-repositorio.git
+
+#### Verificar el branch en el que te encuentras
+git branch
+
 #### Agregar archivos ####
 git add * or <fileName>
 
@@ -26,3 +35,9 @@ git commit -m "comentario descriptivo"
 
 Subir cambios:
 git push origin <branchName>
+
+ó
+
+git push -u origin main
+Al usar la opción -u (o --set-upstream), estás configurando tu rama local main para que rastree la rama remota main en el repositorio origin.
+Esto significa que en futuras ocasiones, podrás usar simplemente git push o git pull sin tener que especificar origin main.
