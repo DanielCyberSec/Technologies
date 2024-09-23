@@ -27,8 +27,13 @@ git branch
 1. git fetch
 2. git status
 
-#### Ver diferencias entre tu rama local y la rama remota
-git diff origin/main
+#### Ver diferencias entre tu rama local con respecto a la rama remota
+1. git fetch
+2. git diff origin/main
+
+#### Ver diferencias entre la rama remota con respecto a la rama local
+1. git fetch
+2. git diff HEAD..origin/main
 
 #### Aplicar los cambios de la rama remota sobre tu trabajo local, y...
 git pull --rebase
