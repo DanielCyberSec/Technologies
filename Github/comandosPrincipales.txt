@@ -23,6 +23,15 @@ git remote set-url origin git@github.com:tu-usuario/tu-repositorio.git
 #### Verificar el branch en el que te encuentras
 git branch
 
+#### Verifica el estado del repositorio
+git status
+
+#### Aplicar los cambios de la rama remota sobre tu trabajo local
+git pull --rebase
+
+#### Sobrescribir los cambios locales, para limpiar el árbol
+git reset --hard origin/main
+
 #### Agregar archivos ####
 git add * or <fileName>
 
