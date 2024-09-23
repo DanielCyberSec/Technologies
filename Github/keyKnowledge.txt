@@ -1,0 +1,13 @@
+### Diferencias entre "git push -u origin main" y "git push origin main"
+radican principalmente en cómo Git maneja la relación entre tu rama local y la rama remota en el repositorio.
+1. git push origin main
+Este comando simplemente sube los cambios de tu rama local llamada main al repositorio remoto llamado origin.
+Si la rama main no está configurada para rastrear la rama remota, tendrás que especificar origin main cada vez que quieras hacer un push desde esa rama.
+La primera vez que empujas una rama que no ha sido rastreada previamente:
+git push -u origin main
+En futuros empujes, solo necesitas:
+git push
+
+2. git push -u origin main
+Al usar la opción -u (o --set-upstream), estás configurando tu rama local main para que rastree la rama remota main en el repositorio origin.
+Esto significa que en futuras ocasiones, podrás usar simplemente git push o git pull sin tener que especificar origin main. Git sabrá a qué rama remota estás haciendo referencia automáticamente.
