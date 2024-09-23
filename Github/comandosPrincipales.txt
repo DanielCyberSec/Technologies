@@ -26,11 +26,14 @@ git branch
 #### Verifica el estado del repositorio
 git status
 
-#### Aplicar los cambios de la rama remota sobre tu trabajo local
+#### Aplicar los cambios de la rama remota sobre tu trabajo local, y...
 git pull --rebase
 
 #### Sobrescribir los cambios locales, para limpiar el árbol
 git reset --hard origin/main
+
+#### Otra forma es Descartar los cambios locales restaurando el archivo para después hacer un git pull sin problemas
+git restore <file>
 
 #### Agregar archivos ####
 git add * or <fileName>
