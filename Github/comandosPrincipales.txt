@@ -1,6 +1,16 @@
 Iniciar Git en la carpeta que contiene los archivos:
 git init
 
+##### Conecta tu repositorio local con GitHub mediante SSH ####
+git remote add origin git@github.com:tu-usuario/tu-repositorio.git
+
+#### Verifica que el remoto esté configurado correctamente ####
+git remote -v
+
+Deberías ver algo como esto:
+origin  git@github.com:tu-usuario/tu-repositorio.git (fetch)
+origin  git@github.com:tu-usuario/tu-repositorio.git (push)
+
 #### Agregar archivos ####
 git add * or <fileName>
 
